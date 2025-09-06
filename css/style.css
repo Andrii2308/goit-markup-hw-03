@@ -4,7 +4,9 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
-  display: block;
+}
+.img {
+    display: block;
 }
 p,
 h1,
@@ -25,7 +27,10 @@ a {
   text-decoration: none;
 }
 .header {
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -99,9 +104,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1088px;
-  margin-left: 15px;
-  margin-right: 15px;
   margin: 0 auto;
 }
 .header-address-links:hover,
