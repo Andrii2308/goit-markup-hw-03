@@ -32,6 +32,8 @@ text-transform: uppercase;
 color: #4d5ae5;
 padding-top: 24px;
 padding-bottom: 24px;
+display: ;
+align-items: center;
 
 
 }
@@ -177,6 +179,7 @@ background: #4d5ae5;
 background-color: #404BBF;
 }
 .container.advant {
+  margin: 0 auto
 }
 .advantages {
 }
@@ -194,18 +197,18 @@ overflow: hidden;
 }
 .advantages-list {
 display: flex;
+justify-content: space-between;
 padding-top: 120px;
 padding-bottom: 120px;
-margin-right: auto;
-margin-left: auto;
-margin: 0% auto;
+margin: 0 auto;
 gap: 2.27%;
+
+
 }
 .advantages-item {
-flex: 0 0 calc((100% - 3 * 24px) / 4);
-flex: 0 0 23.3%;
-width: 264px;
-max-height: 104px;
+ 
+
+
 
 }
 .advantages-item-title {
@@ -215,6 +218,9 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 padding-bottom: 8px;
+
+
+
 }
 .advantages-item-text{
 font-weight: 400;
@@ -222,18 +228,21 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+
 }
 .portfolio-item-text {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+
 }
 
 .our-team {
 background: #f4f4fd;
 padding-top: 120px;
 padding-bottom: 72px;
+
 }
 
 .our-team-title {
@@ -247,17 +256,31 @@ text-transform: capitalize;
 padding-bottom: 72px;
 }
 .container.our-team-container {
-padding-top: 120px;
-padding-bottom: 120px;
-display: flex;
+margin: 0 auto
+
+
+
+
 }
+
 .our-team-list {
-background-color: #FFFFFF;
+display: flex;
+  margin: 0 auto; 
+
+
 }
 .our-team-item {
-background-color: #FFFFFF
+ 
+
+  
+  
+
 }
 .our-team-img {
+  padding-bottom: 32px;
+  
+  
+
 }
 .our-team-item-title {
 font-weight: 500;
@@ -267,6 +290,9 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
+  padding-bottom: 8px;
+  
+
 }
 .our-team-item-text {
 font-size: 16px;
@@ -274,14 +300,23 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+  padding-bottom: 32px;
+  
 }
 .portfolio {
 }
 .container.portfolio-container {
+  display: flex;
+  flex-direction: column;
 padding-bottom: 120px;
 padding-top: 120px;
+margin: 0 auto
+
+
+
 }
 .portfolio-title {
+display: flex;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -292,8 +327,19 @@ text-transform: capitalize;
 padding-bottom: 72px;
 }
 .portfolio-list {
+   display: flex;           /* робимо флекс-контейнер */
+  flex-wrap: wrap;         /* дозволяємо карткам переноситися на наступний рядок */
+  justify-content: center; /* центрируем ряд карток */
+  gap: 24px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
 }
 .portfolio-item {
+  
+    flex: 0 1 calc((1058px - 2 * 24px) / 3); /* задаємо ширину картки */
+
+  
 }
 .portfolio-img {
 }
