@@ -4,6 +4,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
+  display: block;
 }
 p,
 h1,
@@ -23,7 +24,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+.header {
+  border-bottom: 1px solid #e7e9fc
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -84,6 +87,7 @@ a {
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 .container {
   max-width: 1158px;
@@ -120,6 +124,9 @@ a {
 }
 .main-section {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+
 }
 .container.main-container {
   display: flex;
@@ -162,6 +169,10 @@ a {
   margin-bottom: 188px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .order-service:hover,
 .order-service:focus {
@@ -171,6 +182,8 @@ a {
   margin: 0 auto;
 }
 .advantages {
+  padding-top: 120px;
+   padding-bottom: 120px;
 }
 .advantages-title {
   position: absolute;
@@ -187,20 +200,19 @@ a {
 .advantages-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 120px;
-  padding-bottom: 120px;
   margin: 0 auto;
-  gap: 2.27%;
+  gap: 24px;
 }
 .advantages-item {
-}
+  width: calc((100% - 72px) / 4);
+}Ї
 .advantages-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-item-text {
   font-weight: 400;
@@ -230,7 +242,7 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
@@ -239,6 +251,7 @@ a {
 }
 .our-team-item {
   width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px; 
 }
 .our-team-info {
   background-color: #ffffff;
@@ -263,6 +276,8 @@ a {
   color: #434455;
 }
 .portfolio {
+  padding-top: 120px; 
+  padding-bottom: 120px;
 }
 .container.portfolio-container {
   display: flex;
@@ -272,7 +287,6 @@ a {
   margin: 0 auto;
 }
 .portfolio-title {
-  display: flex;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -280,7 +294,7 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex; /* робимо флекс-контейнер */
@@ -290,6 +304,7 @@ a {
   padding: 0;
   margin: 0 auto;
   list-style: none;
+  row-gap: 48px;
 }
 .portfolio-item {
   flex: 0 1 calc((1058px - 2 * 24px) / 3); /* задаємо ширину картки */
