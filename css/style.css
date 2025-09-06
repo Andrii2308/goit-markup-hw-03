@@ -31,7 +31,6 @@ a {
   width: 1158px;
 }
 .container {
-  width: 1158px;
 }
 
 .header-logo {
@@ -95,6 +94,8 @@ a {
 .header-navigation {
   display: flex;
   align-items: center;
+    width: 1158px;
+
 }
 .container {
   max-width: 1158px;
