@@ -30,7 +30,8 @@ a {
   border-bottom: 1px solid #e7e9fc;
   width: 1158px;
 }
-.container {
+.container.header-navigation {
+  width: 1158px;
 }
 
 .header-logo {
@@ -94,8 +95,6 @@ a {
 .header-navigation {
   display: flex;
   align-items: center;
-    width: 1158px;
-
 }
 .container {
   max-width: 1158px;
